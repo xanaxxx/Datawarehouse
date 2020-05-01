@@ -16,3 +16,15 @@
 ####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
 #####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 ######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+
+##Headers (Underline)
+
+H1 Header (Underline)
+=============
+
+H2 Header (Underline)
+-------------
+
+###Characters
+                
+----
