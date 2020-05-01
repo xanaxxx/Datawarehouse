@@ -53,6 +53,7 @@ MMMMMMMMMMMMMMMMMMMMMWWWWWWWWMMMMMMMMMMMMMMMMMMMMM                      .
 ░░░░░░░░█▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█ 
 ░░░░░░░░█░░░░▀▄▄▄▄▄▄▄▄▄▄█
 ```
-[H1 header]
+H1 Header (Underline)
+=============
 
 ##Bitacora [Heading link](https://github.com/pandao/editor.md "Heading link")
