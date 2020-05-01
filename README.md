@@ -56,5 +56,13 @@ MMMMMMMMMMMMMMMMMMMMMWWWWWWWWMMMMMMMMMMMMMMMMMMMMM                      .
 Aquí vas a encontrar lo siguiente 
 =============
 
-H1 Header [Heading link](https://github.com/pandao/editor.md "Heading link")
+(https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Bitacora")
+=============
+(https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Proyecto")
+=============
+(https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Pentaho .ktrs")
+=============
+(https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Sakila-db")
+=============
+(https://github.com/xanaxxx/Datawharehouse/tree/master/videos "videos")
 =============
