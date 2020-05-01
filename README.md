@@ -1,9 +1,11 @@
 
-# ____   __   ____   __   _  _   __   ____  ____  _  _   __   _  _  ____  ____ 
-#(    \ / _\ (_  _) / _\ / )( \ / _\ (  _ \(  __)/ )( \ /  \ / )( \/ ___)(  __)
-# ) D (/    \  )(  /    \\ /\ //    \ )   / ) _) ) __ ((  O )) \/ (\___ \ ) _) 
-#(____/\_/\_/ (__) \_/\_/(_/\_)\_/\_/(__\_)(____)\_)(_/ \__/ \____/(____/(____)
-
-
+###Sequence Diagram
+                    
+```seq
+Andrew->China: Says Hello 
+Note right of China: China thinks\nabout it 
+China-->Andrew: How are you? 
+Andrew->>China: I am good thanks!
+```
 
 almacenamiento de proyectos en github 
