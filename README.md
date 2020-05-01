@@ -36,8 +36,33 @@ MMMMMMMWWMMMMMMMMNkl:;,,,,,,;:lkXMMWWMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMWWWWWWWWMMMMMMMMMMMMMMMMMMMMM                      .                                                                     
                                                                                                              
                                                           
+                                                         
+```
+Aquí vas a encontrar lo siguiente 
+=============
+
+[Bitacora](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Bitacora")
+=============
+[Proyecto](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Proyecto")
+=============
+[Pentaho](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Pentaho .ktrs")
+=============
+[Sakila](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Sakila-db")
+=============
+[Videos](https://github.com/xanaxxx/Datawharehouse/tree/master/videos "videos")
+=============
+
+
+
+```javascript
+
+######  ####  #      #       ####  #    #    #    # ###### 
+ #      #    # #      #      #    # #    #    ##  ## #      
+ #####  #    # #      #      #    # #    #    # ## # #####  
+ #      #    # #      #      #    # # ## #    #    # #      
+ #      #    # #      #      #    # ##  ##    #    # #      
+ #       ####  ###### ######  ####  #    #    #    # ###### 
                                                           
-                                                                                          
 ░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄ 
 ░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄ 
 ░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█ 
@@ -53,16 +78,4 @@ MMMMMMMMMMMMMMMMMMMMMWWWWWWWWMMMMMMMMMMMMMMMMMMMMM                      .
 ░░░░░░░░█▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█ 
 ░░░░░░░░█░░░░▀▄▄▄▄▄▄▄▄▄▄█
 ```
-Aquí vas a encontrar lo siguiente 
-=============
 
-[Bitacora](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Bitacora")
-=============
-[Proyecto](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Proyecto")
-=============
-[Pentaho](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Pentaho .ktrs")
-=============
-[Sakila](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Sakila-db")
-=============
-[Videos](https://github.com/xanaxxx/Datawharehouse/tree/master/videos "videos")
-=============
