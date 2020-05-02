@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/27/2020 11:54:12 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-1412TSBV"
+  DTS:CreatorName="LAPTOP-1412TSBV\marse"
+  DTS:DTSID="{FAB1EDE7-ED2D-4B14-9F75-B0BEFF55A3CD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.94"
+  DTS:LocaleID="9226"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{B3ACA542-971B-4294-AE0B-9D715B8A3FDC}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{DD0A8DF6-8C07-4B72-9DC6-5113BFC50F7D}"
+      DTS:ObjectName="Administrador de conexiones con Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\marse\OneDrive\Escritorio\8\datawharehouse\segundo parcial data\covid19.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{390FB19B-EA51-4971-B004-3F8DFB917758}"
+      DTS:ObjectName="Administrador de conexiones con Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\marse\OneDrive\Escritorio\8\datawharehouse\segundo parcial data\covid19.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B9F51574-91A6-400D-99A3-DEF864CBAFD6}"
+      DTS:ObjectName="Administrador de conexiones con Excel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\marse\OneDrive\Escritorio\8\datawharehouse\segundo parcial data\covid19.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3B267C56-2280-4372-9CF4-063AE3F82E68}"
+      DTS:ObjectName="Administrador de conexiones con Excel 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\marse\OneDrive\Escritorio\8\datawharehouse\segundo parcial data\covid19.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones con Excel 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{018EE42F-D390-43E0-9B8A-BF458471EAA8}"
+      DTS:ObjectName="Administrador de conexiones con Excel 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\marse\OneDrive\Escritorio\8\datawharehouse\segundo parcial data\covid19.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-1412TSBV.Casos_covid191]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{48D8CA2F-9880-46F6-BC51-CE7E50DADE06}"
+      DTS:ObjectName="LAPTOP-1412TSBV.Casos_covid191">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LAPTOP-1412TSBV;Initial Catalog=Casos_covid19;Integrated Security=True;Application Name=SSIS-Package-{48D8CA2F-9880-46F6-BC51-CE7E50DADE06}LAPTOP-1412TSBV.Casos_covid191;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.coivd19.root1]"
+      DTS:CreationName="ADO.NET:MySql.Data.MySqlClient.MySqlConnection, MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      DTS:DTSID="{DD934204-2FF6-4D4B-86A6-5FC98155B905}"
+      DTS:ObjectName="localhost.coivd19.root1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="server=localhost;user id=root;persistsecurityinfo=True;database=coivd19;">
+          <DTS:Password
+            DTS:Name="password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuJ9GCY4tnka9gSHUaRiN/QAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADv8NWGvU94mwH/JdFoPuyf46oJTpLivOKo4N36UVe6JQAAAAAOgAAAAAIAACAAAACDfDGPi0IX1WhXNRpIMobqZPjLkoI1Ip9fd5xbEyUHliAAAAB2Y2BYQk7wgyBzW78ityEYPHgSsARHvliNp41VTkEFVEAAAABbvrxYTTrADy/1HNlfJbLUeoZtG9+MYYhkiuzDCtaJ/Xhv5iOfayoXk1Pf08HNJEiAgzECACDA8+26peb/ZYKN</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{6E80122C-DB8C-4679-9B4F-05218834D38D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos\Base de datos covi19-1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Base de datos covi19-1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."registro_covid"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-1412TSBV.Casos_covid191]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-1412TSBV.Casos_covid191]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[ID de caso]"
+                      cachedDataType="r8"
+                      cachedName="ID de caso"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_caso]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[ID de caso]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[,Fecha de diagnÃ³stico,]"
+                      cachedDataType="date"
+                      cachedName=",Fecha de diagnÃ³stico,"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_diagnostico]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,Fecha de diagnÃ³stico,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[Ciudad de ubicaciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ciudad de ubicaciÃ³n,"
+                      cachedSortKeyPosition="-3"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[ciudad_ubicacion]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Ciudad de ubicaciÃ³n,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[Departamento o Distrito]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Departamento o Distrito"
+                      cachedSortKeyPosition="-4"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[departamento_o_distrito]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Departamento o Distrito]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[,AtenciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName=",AtenciÃ³n,"
+                      cachedSortKeyPosition="-5"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[atencion]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,AtenciÃ³n,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[Edad,]"
+                      cachedDataType="r8"
+                      cachedName="Edad,"
+                      cachedSortKeyPosition="6"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[edad]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Edad,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[Sexo,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sexo,"
+                      cachedSortKeyPosition="7"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sexo]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Sexo,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[Tipo*,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo*,"
+                      cachedSortKeyPosition="-8"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[tipo]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Tipo*,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].Columns[PaÃ­s de procedencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PaÃ­s de procedencia"
+                      cachedSortKeyPosition="9"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[pais_procedencia]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[PaÃ­s de procedencia]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_caso]"
+                      dataType="i4"
+                      name="id_caso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_diagnostico]"
+                      dataType="wstr"
+                      length="50"
+                      name="fecha_diagnostico" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[ciudad_ubicacion]"
+                      dataType="wstr"
+                      length="50"
+                      name="ciudad_ubicacion" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[departamento_o_distrito]"
+                      dataType="wstr"
+                      length="50"
+                      name="departamento_o_distrito" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[atencion]"
+                      dataType="wstr"
+                      length="50"
+                      name="atencion" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[edad]"
+                      dataType="i4"
+                      name="edad" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="50"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[tipo]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET].ExternalColumns[pais_procedencia]"
+                      dataType="wstr"
+                      length="50"
+                      name="pais_procedencia" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Base de datos covi19-1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Base de datos covi19-1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Base de datos covi19-1.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\base de datos covid19-espejo"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="base de datos covid19-espejo"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."registro_covid_espejo"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-1412TSBV.Casos_covid191]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-1412TSBV.Casos_covid191]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[ID de caso]"
+                      cachedDataType="r8"
+                      cachedName="ID de caso"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_caso]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[ID de caso]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[,Fecha de diagnÃ³stico,]"
+                      cachedDataType="date"
+                      cachedName=",Fecha de diagnÃ³stico,"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_diagnostico]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,Fecha de diagnÃ³stico,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[Ciudad de ubicaciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ciudad de ubicaciÃ³n,"
+                      cachedSortKeyPosition="-3"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[ciudad_ubicacion]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Ciudad de ubicaciÃ³n,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[Departamento o Distrito]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Departamento o Distrito"
+                      cachedSortKeyPosition="-4"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[departamento_o_distrito]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Departamento o Distrito]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[,AtenciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName=",AtenciÃ³n,"
+                      cachedSortKeyPosition="-5"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[atencion]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,AtenciÃ³n,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[Edad,]"
+                      cachedDataType="r8"
+                      cachedName="Edad,"
+                      cachedSortKeyPosition="6"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[edad]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Edad,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[Sexo,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sexo,"
+                      cachedSortKeyPosition="7"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[sexo]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Sexo,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[Tipo*,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo*,"
+                      cachedSortKeyPosition="-8"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[tipo]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Tipo*,]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].Columns[PaÃ­s de procedencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PaÃ­s de procedencia"
+                      cachedSortKeyPosition="9"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[pais_procedencia]"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[PaÃ­s de procedencia]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[id_caso]"
+                      dataType="i4"
+                      name="id_caso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[fecha_diagnostico]"
+                      dataType="wstr"
+                      length="50"
+                      name="fecha_diagnostico" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[ciudad_ubicacion]"
+                      dataType="wstr"
+                      length="50"
+                      name="ciudad_ubicacion" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[departamento_o_distrito]"
+                      dataType="wstr"
+                      length="50"
+                      name="departamento_o_distrito" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[atencion]"
+                      dataType="wstr"
+                      length="50"
+                      name="atencion" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[edad]"
+                      dataType="i4"
+                      name="edad" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[sexo]"
+                      dataType="wstr"
+                      length="50"
+                      name="sexo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[tipo]"
+                      dataType="wstr"
+                      length="50"
+                      name="tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET].ExternalColumns[pais_procedencia]"
+                      dataType="wstr"
+                      length="50"
+                      name="pais_procedencia" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Multidifusión"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multidifusión;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Distribuye cada fila de entrada a cada una de las filas de una o varias salidas. Por ejemplo, se crea una bifurcación de un flujo de datos para realizar una copia de los datos de modo que se puedan enmascarar algunos valores antes de compartirlos con los asociados externos."
+              name="Multidifusión">
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Multidifusión.Inputs[Entrada de Multidifusión 1]"
+                  name="Entrada de Multidifusión 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Multidifusión.Outputs[Salida de multidifusión 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Salida de multidifusión 2"
+                  synchronousInputId="Package\Tarea Flujo de datos\Multidifusión.Inputs[Entrada de Multidifusión 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Multidifusión.Outputs[Salida de multidifusión 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Salida de multidifusión 3"
+                  synchronousInputId="Package\Tarea Flujo de datos\Multidifusión.Inputs[Entrada de Multidifusión 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Multidifusión.Outputs[Salida de multidifusión 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Salida de multidifusión 1"
+                  synchronousInputId="Package\Tarea Flujo de datos\Multidifusión.Inputs[Entrada de Multidifusión 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Ordenar"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Ordenar;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Ordena los datos de entrada de manera ascendente o descendente cuando no es posible ordenarlos en su origen. Por ejemplo, se ordenan los datos de ventas por 'id. de cliente' antes de que se escriban en un archivo plano y se entreguen a otro departamento. Nota: no se recomienda realizar esta transformación para grandes flujos de datos."
+              name="Ordenar"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si la transformación Ordenar quita filas con valores de ordenación duplicados."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el número máximo de subprocesos que se deben usar para la ordenación."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación]"
+                  name="Entrada de ordenación">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[ID de caso]"
+                      cachedDataType="r8"
+                      cachedName="ID de caso"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID de caso]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[,Fecha de diagnÃ³stico,]"
+                      cachedDataType="date"
+                      cachedName=",Fecha de diagnÃ³stico,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,Fecha de diagnÃ³stico,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[Ciudad de ubicaciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Ciudad de ubicaciÃ³n,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">-3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[Departamento o Distrito]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Departamento o Distrito"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento o Distrito]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">-4</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[,AtenciÃ³n,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName=",AtenciÃ³n,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,AtenciÃ³n,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">-5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[Edad,]"
+                      cachedDataType="r8"
+                      cachedName="Edad,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Edad,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">6</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[Sexo,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sexo,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Sexo,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">7</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[Tipo*,]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Tipo*,"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo*,]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">-8</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación].Columns[PaÃ­s de procedencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PaÃ­s de procedencia"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[PaÃ­s de procedencia]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica las opciones de comparación para datos de caracteres."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Especifica el criterio de ordenación de la columna."
+                          name="NewSortKeyPosition">9</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación]"
+                  isSorted="true"
+                  name="Salida de ordenación">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[ID de caso]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[ID de caso]"
+                      name="ID de caso"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID de caso]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,Fecha de diagnÃ³stico,]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,Fecha de diagnÃ³stico,]"
+                      name=",Fecha de diagnÃ³stico,"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,Fecha de diagnÃ³stico,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Ciudad de ubicaciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Ciudad de ubicaciÃ³n,]"
+                      name="Ciudad de ubicaciÃ³n,"
+                      sortKeyPosition="-3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Departamento o Distrito]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Departamento o Distrito]"
+                      name="Departamento o Distrito"
+                      sortKeyPosition="-4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento o Distrito]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,AtenciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[,AtenciÃ³n,]"
+                      name=",AtenciÃ³n,"
+                      sortKeyPosition="-5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,AtenciÃ³n,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Edad,]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Edad,]"
+                      name="Edad,"
+                      sortKeyPosition="6">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Edad,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Sexo,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Sexo,]"
+                      name="Sexo,"
+                      sortKeyPosition="7">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Sexo,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Tipo*,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[Tipo*,]"
+                      name="Tipo*,"
+                      sortKeyPosition="-8">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo*,]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[PaÃ­s de procedencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación].Columns[PaÃ­s de procedencia]"
+                      name="PaÃ­s de procedencia"
+                      sortKeyPosition="9">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
+                          name="SortColumnId">#{Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[PaÃ­s de procedencia]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos\Origen de Excel"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Origen de Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de Excel"
+              name="Origen de Excel"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">'Casos_positivos_de_COVID-19_en_$'</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="La asignación de parámetros del comando SQL a variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones con Excel 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones con Excel 4]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel]"
+                  name="Salida de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID de caso]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID de caso]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[ID de caso]"
+                      name="ID de caso"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,Fecha de diagnÃ³stico,]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[,Fecha de diagnÃ³stico,]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,Fecha de diagnÃ³stico,]"
+                      name=",Fecha de diagnÃ³stico,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ciudad de ubicaciÃ³n,]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]"
+                      name="Ciudad de ubicaciÃ³n,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento o Distrito]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Departamento o Distrito]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Departamento o Distrito]"
+                      name="Departamento o Distrito"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,AtenciÃ³n,]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[,AtenciÃ³n,]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[,AtenciÃ³n,]"
+                      name=",AtenciÃ³n,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Edad,]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Edad,]"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Edad,]"
+                      name="Edad,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Sexo,]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Sexo,]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Sexo,]"
+                      name="Sexo,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo*,]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo*,]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[Tipo*,]"
+                      name="Tipo*,"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[PaÃ­s de procedencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[PaÃ­s de procedencia]"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].Columns[PaÃ­s de procedencia]"
+                      name="PaÃ­s de procedencia"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[ID de caso]"
+                      dataType="r8"
+                      name="ID de caso" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[,Fecha de diagnÃ³stico,]"
+                      dataType="date"
+                      name=",Fecha de diagnÃ³stico," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Ciudad de ubicaciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ciudad de ubicaciÃ³n," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Departamento o Distrito]"
+                      dataType="wstr"
+                      length="255"
+                      name="Departamento o Distrito" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[,AtenciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      name=",AtenciÃ³n," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Edad,]"
+                      dataType="r8"
+                      name="Edad," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Sexo,]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sexo," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[Tipo*,]"
+                      dataType="wstr"
+                      length="255"
+                      name="Tipo*," />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel].ExternalColumns[PaÃ­s de procedencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="PaÃ­s de procedencia" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de Excel">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID de caso]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ID de caso]"
+                      name="ID de caso" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[,Fecha de diagnÃ³stico,]"
+                      dataType="date"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[,Fecha de diagnÃ³stico,]"
+                      name=",Fecha de diagnÃ³stico," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Ciudad de ubicaciÃ³n,]"
+                      name="Ciudad de ubicaciÃ³n," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Departamento o Distrito]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Departamento o Distrito]"
+                      name="Departamento o Distrito" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[,AtenciÃ³n,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[,AtenciÃ³n,]"
+                      name=",AtenciÃ³n," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Edad,]"
+                      dataType="r8"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Edad,]"
+                      name="Edad," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Sexo,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Sexo,]"
+                      name="Sexo," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo*,]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[Tipo*,]"
+                      name="Tipo*," />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[PaÃ­s de procedencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[PaÃ­s de procedencia]"
+                      name="PaÃ­s de procedencia" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de error de origen de Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de multidifusión 2]"
+              endId="Package\Tarea Flujo de datos\Base de datos covi19-1.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de multidifusión 2"
+              startId="Package\Tarea Flujo de datos\Multidifusión.Outputs[Salida de multidifusión 2]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de multidifusión 3]"
+              endId="Package\Tarea Flujo de datos\base de datos covid19-espejo.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de multidifusión 3"
+              startId="Package\Tarea Flujo de datos\Multidifusión.Outputs[Salida de multidifusión 3]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
+              endId="Package\Tarea Flujo de datos\Multidifusión.Inputs[Entrada de Multidifusión 1]"
+              name="Salida de ordenación"
+              startId="Package\Tarea Flujo de datos\Ordenar.Outputs[Salida de ordenación]" />
+            <path
+              refId="Package\Tarea Flujo de datos.Paths[Salida de origen de Excel]"
+              endId="Package\Tarea Flujo de datos\Ordenar.Inputs[Entrada de ordenación]"
+              name="Salida de origen de Excel"
+              startId="Package\Tarea Flujo de datos\Origen de Excel.Outputs[Salida de origen de Excel]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="203,106" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Tarea Flujo de datos\Origen de Excel"
+          TopLeft="62,49" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Tarea Flujo de datos\Multidifusión"
+          TopLeft="237,205" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Tarea Flujo de datos\Base de datos covi19-1"
+          TopLeft="56,333" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de multidifusión 2]"
+          TopLeft="306,247">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-156,86"
+              Start="0,0"
+              End="-156,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39"
+                    Point2="0,43"
+                    Point3="-4,43" />
+                  <mssgle:LineSegment
+                    End="-152,43" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-152,43"
+                    Point2="-156,43"
+                    Point3="-156,47" />
+                  <mssgle:LineSegment
+                    End="-156,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Tarea Flujo de datos\Ordenar"
+          TopLeft="361,118" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de origen de Excel]"
+          TopLeft="138.5,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="281,27"
+              Start="0,0"
+              End="281,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.5"
+                    Point2="0,13.5"
+                    Point3="4,13.5" />
+                  <mssgle:LineSegment
+                    End="277,13.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="277,13.5"
+                    Point2="281,13.5"
+                    Point3="281,17.5" />
+                  <mssgle:LineSegment
+                    End="281,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de ordenación]"
+          TopLeft="419.5,160">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-113.5,45"
+              Start="0,0"
+              End="-113.5,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="-4,22.5" />
+                  <mssgle:LineSegment
+                    End="-109.5,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-109.5,22.5"
+                    Point2="-113.5,22.5"
+                    Point3="-113.5,26.5" />
+                  <mssgle:LineSegment
+                    End="-113.5,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Tarea Flujo de datos\base de datos covid19-espejo"
+          TopLeft="344,332" />
+        <EdgeLayout
+          Id="Package\Tarea Flujo de datos.Paths[Salida de multidifusión 3]"
+          TopLeft="327.666666666667,247">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.833333333333,85"
+              Start="0,0"
+              End="125.833333333333,77.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5845272206304" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5845272206304"
+                    Point2="0,34.5845272206304"
+                    Point3="4,34.5845272206304" />
+                  <mssgle:LineSegment
+                    End="121.833333333333,34.5845272206304" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.833333333333,34.5845272206304"
+                    Point2="125.833333333333,34.5845272206304"
+                    Point3="125.833333333333,38.5845272206304" />
+                  <mssgle:LineSegment
+                    End="125.833333333333,77.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Origen de Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\Base de datos covi19-1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tarea Flujo de datos\base de datos covid19-espejo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
