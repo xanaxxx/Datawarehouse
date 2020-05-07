@@ -76,9 +76,13 @@ Aquí vas a encontrar lo siguiente
 
 [Bitacora](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Bitacora")
 =============
-[Proyecto](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Proyecto")
+[Proyecto](https://github.com/xanaxxx/Datawarehouse/tree/master/Ejercicios%20ETL(SQL%20server-openRefine-Talend) "proyecto")
 =============
-[Pentaho](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Pentaho .ktrs")
+[Pentaho](https://github.com/xanaxxx/Datawharehouse/tree/master/Bitacora "Proyecto")
+=============
+[Parcial](https://github.com/xanaxxx/Datawarehouse/tree/master/Parcial "Parcial")
+=============
+[Ejercicios ETL](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Pentaho .ktrs")
 =============
 [Sakila](https://github.com/xanaxxx/Datawharehouse/tree/master/pentaho%20.ktrs "Sakila-db")
 =============
