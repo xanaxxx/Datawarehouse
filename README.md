@@ -1,4 +1,4 @@
-```javascript
+﻿```javascript
                                                                                                                                    
     ____        __                                 __                        
    / __ \____ _/ /_____ __      ______ _________  / /_  ____  __  __________ 
@@ -38,6 +38,15 @@ MMMMMMMMMMMMMMMMMMMMMWWWWWWWWMMMMMMMMMMMMMMMMMMMMM                      .
                                                           
                                                          
 ```
+
+Bienvenido
+=============
+
+Mi nombre es Mario Reyes , este repositorio pertenece a la materia de Datawarehouse, si tienes dudas
+respecto a algún item de aquí contactame en el siguiente correo mjreyesc@academia.usbbog.edu.co
+-------------
+
+
 Aquí vas a encontrar lo siguiente 
 =============
 
