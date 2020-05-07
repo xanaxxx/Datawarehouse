@@ -56,6 +56,7 @@ existen varias metodologías o formas de realizar la arquitectura :
 Kimball:
 -------------
 ![](http://mundobi.com.ar/wp-content/uploads/2012/04/kimball2.jpg)
+----
 Lo podemos memorizar facilmente como :" de los mas pequeño a los mas grande "
 es decir podemos hacer un datawarehouse apartir de unos datamars 
 
@@ -63,6 +64,7 @@ es decir podemos hacer un datawarehouse apartir de unos datamars
 Inmon
 -------------
 ![](http://mundobi.com.ar/wp-content/uploads/2012/04/inmon.jpg)
+----
 Lo podemos memorizar facilmetne como:" de lo mas grande a los mas pequeño"
 es decir podemos partir de un datawarehouse enorme a pequeño datamars 
 
