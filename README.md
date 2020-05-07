@@ -45,7 +45,7 @@ Bienvenido
 Mi nombre es Mario Reyes , este repositorio pertenece a la materia de Datawarehouse, si tienes dudas
 respecto a algún item de aquí contactame en el siguiente correo mjreyesc@academia.usbbog.edu.co
 
-![](https://media.giphy.com/media/GuRuLWOGo0CI/giphy.gif
+![](https://media.giphy.com/media/GuRuLWOGo0CI/giphy.gif)
 
 Un poco de teoría 
 -------------
@@ -54,10 +54,11 @@ pasan por un proceso de extracción ,transformación , carga , en ingles esto si
 existen varias metodologías o formas de realizar la arquitectura :
 
 Kimball:
-
+-------------
 ![](http://mundobi.com.ar/wp-content/uploads/2012/04/kimball2.jpg)
 
 Inmon
+-------------
 ![](http://mundobi.com.ar/wp-content/uploads/2012/04/inmon.jpg)
 
 
